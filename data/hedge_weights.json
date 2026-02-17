@@ -1,0 +1,18 @@
+{
+  "instruments": [
+    {
+      "instrument": "Call_100_Jun",
+      "optimal_weight": 0.3627
+    },
+    {
+      "instrument": "Put_100_Sep",
+      "optimal_weight": -0.4135
+    },
+    {
+      "instrument": "Forward",
+      "optimal_weight": 18.6904
+    }
+  ]
+}
+
+
