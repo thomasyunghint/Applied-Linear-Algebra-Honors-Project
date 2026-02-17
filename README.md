@@ -10,6 +10,24 @@ The code in `scripts/` generates the quantitative analyses and figures stored in
 - Use vectors, matrices, eigen-decomposition, and least squares methods in concrete case studies.
 - Produce reproducible Python code and publication-quality figures.
 
+### Key Visuals
+
+![Efficient Frontier](figures/fig_efficient_frontier.png)
+
+The efficient frontier plot shows the trade-off between **expected return** and **volatility (risk)** for a family of portfolios constructed from the underlying assets. Each point corresponds to a different portfolio (i.e., different weights that sum to 1), and the frontier highlights the **mean–variance optimal** choices. You can interpret it by:
+
+- Looking **horizontally**: for a given level of risk (standard deviation on the x-axis), the frontier gives you the **maximum achievable expected return**.
+- Looking **vertically**: for a target expected return (y-axis), the frontier identifies the **minimum-risk** portfolio that attains it.
+- Comparing portfolios on and below the frontier to understand how far a given allocation is from the theoretical optimum under the model assumptions.
+
+![Portfolio Weights](figures/fig_portfolio_weights.png)
+
+The portfolio weights plot shows the **optimized allocation** across each asset in the universe. Bars above zero represent **long positions**, and (if present) bars below zero represent **short positions**. You can use it to:
+
+- See which assets carry the **largest weight** and therefore contribute most to the portfolio’s risk and return.
+- Compare different optimization runs (e.g., different risk aversion levels or constraints) by how they **reallocate weight** among assets.
+- Connect the weight pattern back to the efficient frontier: more aggressive (high-return) portfolios typically concentrate weight in higher-volatility assets, while more conservative portfolios spread weight more evenly or favor lower-volatility names.
+
 ### Repository Structure
 
 - `scripts/` – Python scripts for data processing, analysis, and figure generation.
